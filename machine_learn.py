@@ -45,8 +45,8 @@ val_test_transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
 
-full_train_data = ImageFolder('C:/Users/pc/PycharmProjects/Klasyfikacja danych/TRAIN', transform=train_transform)
-test_data = ImageFolder('C:/Users/pc/PycharmProjects/Klasyfikacja danych/TEST', transform=val_test_transform)
+full_train_data = ImageFolder('sciezka_do_pliku/TRAIN', transform=train_transform)
+test_data = ImageFolder('sciezka_do_pliku/TEST', transform=val_test_transform)
 
 
 # Podział zbioru treningowego na train/validation (80/20)
