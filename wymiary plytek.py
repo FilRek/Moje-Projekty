@@ -32,7 +32,7 @@ def normalizuj_wymiar(nazwa_produktu: str) -> str:
 
 #Wczytywanie i zapis pliku 
 try:
-    input_file = 'C:/Users/Filip Rek/Desktop/wszystkie_plytki.xlsx' 
+    input_file = 'sciezka_do_pliku/plik.xlsx' 
     df_z_pliku = pd.read_excel(input_file)
     
     if 'NAZWA_CALA' in df_z_pliku.columns:
@@ -46,4 +46,5 @@ try:
         print(f"Błąd: W pliku '{input_file}' nie znaleziono kolumny 'NAZWA_CALA'.")
 
 except FileNotFoundError:
+
     print(f"Błąd: Plik '{input_file}' nie został znaleziony.")
